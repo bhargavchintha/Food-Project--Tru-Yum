@@ -359,7 +359,7 @@ window.onclick = function(event) {
                        <div class="Add-Cart-Order-Btn-Process">
                                  <div class="cart-items">
                                     <!-- Add to Cart Form -->
-                                    <form action="Black_Coffee.jsp" method="post" class="ng-pristine ng-valid">
+                                    <form action="Cafe_Latte.jsp" method="post" class="ng-pristine ng-valid">
                                         <input type="hidden" name="itemid" value="NCT-3" /><!-- NCT of means Coffee-Tea -->
                                         <input type="hidden" name="itemname" value="Cafe Latte " />
                                         <input type="hidden" name="itemprice" value="75" />
@@ -371,7 +371,7 @@ window.onclick = function(event) {
                            
                                 <div class="cart-items">
                                        <!-- Add to Order Form -->
-                                       <form action="Black_Coffee.jsp" method="post" class="ng-pristine ng-valid">
+                                       <form action="Cafe_Latte.jsp" method="post" class="ng-pristine ng-valid">
                                             <input type="hidden" name="itemid" value="NCT-3" /><!-- NCT of means Coffee-Tea -->
                                         <input type="hidden" name="itemname" value="Cafe Latte " />
                                         <input type="hidden" name="itemprice" value="75" />
