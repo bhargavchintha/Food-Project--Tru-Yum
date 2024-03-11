@@ -1,0 +1,174 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 11, 2024, 3:16:14 PM
+    Author     : Bhargav
+*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');/* font-family: "PT Serif", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Baskerville:ital@1&family=Lobster+Two:wght@700&display=swap');/* font-family: 'Libre Baskerville', serif;  */
+div.Balck-Coffee{
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.75)), url(../images/Coffee-Tea/Vanilla-Iced-Coffee.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div.Img-Balck_coffee{
+    width: 90%;
+    margin: auto;
+}
+div.Balck-Coffee_Text{
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+h2.Black_text{
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 0.5px 0px #000; 
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+     transition: all 0.3s ease-in-out; 
+}
+h2.Black_text:hover{
+    text-shadow:0px 0.5px 0px #fff;
+}
+div.Grid_Coffee{
+    display: grid;
+    grid-template-columns:auto auto;
+    align-items: center;
+    grid-gap:30px;
+    padding-bottom: 15px;
+    transition: all 0.3s ease-in-out; 
+    overflow: hidden;
+}
+div.IMG-Visible_Grid{
+animation: SidesGs 2s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
+} 
+@keyframes SidesGs { 
+  0% { 
+    transform: translateX(-100%); 
+    opacity: 0; 
+  } 
+  100% { 
+    transform: translateX(0%); 
+    opacity: 1; 
+  } 
+}
+div.Matter_Grid{
+   animation: SidesG 2s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
+} 
+@keyframes SidesG { 
+  0% { 
+    transform: translateX(100%); 
+    opacity: 0; 
+  } 
+  100% { 
+    transform: translateX(0%); 
+    opacity: 1; 
+  }  
+}
+@media screen and (max-width: 870px){
+    div.Grid_Coffee{
+       grid-template-columns:auto; 
+       margin-top: 10px;
+    }
+    div.IMG-Visible_Grid{
+        text-align: center;
+        overflow: hidden;
+    }
+}
+
+img.Black_Coffee{
+    width: 100%;
+    border-radius: 10px;
+    border: 1.5px solid transparent;
+}
+img.Black_Coffee:hover{
+     border: 1.5px solid #fff;
+     box-shadow: 1px 0.5px 1px #fff;
+}
+@media screen and (max-width: 1100px){
+    img.Black_Coffee{
+        width: 400px;
+    }   
+}
+@media screen and (max-width: 700px){
+    img.Black_Coffee{
+        width: 100%;
+    }   
+}
+p.About_Coffee{
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "PT Serif", serif;
+}
+div.Add-Cart-Order-Btn-Process{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns:auto auto;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width: 395px){
+    div.Add-Cart-Order-Btn-Process{
+       grid-template-columns:auto;
+    }   
+}
+button.Add-cart-grilled{
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  background-image: linear-gradient(45deg, #030101 0%, #2f2e2e  51%, #000  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   transition: all 0.3s ease-in-out; 
+}
+
+button.Add-cart-grilled:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0px 0px 14px -7px #fff;
+}
+
+button.Add-cart-grilled:active {
+  transform: scale(0.95);
+}
+
+
+.popup-message {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f8f8f8;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s;
+        z-index: 99999;
+    }
+
+    .popup-message.show {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s;
+    }

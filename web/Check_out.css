@@ -1,0 +1,1692 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+       .nav {
+  height: 70px;
+  width: 100%;
+  background-color: #204F7A;
+  position: relative;
+  padding-top: 13px;
+  position: fixed;
+  z-index: 9999999999;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+div.nav-title a.tum-tum{
+    color: white;
+    transition: all 0.9s ease;
+    text-decoration: none;
+}
+@media screen and (max-width:600px) {
+  div.nav-title a.tum-tum{
+    margin-left: 0px;
+    overflow: hidden;
+  }
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 20px;
+  margin-right: 100px;
+  z-index: 99999999;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 8px 12px 12px 12px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color:#F5F7FA;
+  text-decoration: underline;
+  border-radius: 5px;
+  color: #204F7A;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media  (max-width:967px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 99999;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  
+  #fa-bars{
+      color: white;
+      font-size: 22px;
+      padding-top: 13px;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 40%;
+    /*background-color: #333333db;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top:70px;
+    left: 0px;*/
+     background-color: #f1f1f1;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top:70px;
+    left: 0px;
+    box-shadow: 0.1px 0 2px 0 #000;
+  }
+  .nav > .nav-links > a {
+      color: #204F7A;
+    display: block;
+    width: 100%;
+     transition: 0.3s all ease-in-out;
+  }
+  .nav > .nav-links > a:hover{
+      padding-left: 22px;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+div.nav-links a.Links-None{
+    display: none;
+} 
+@media screen and (max-width:967px){
+    div.nav-links a.Links-None{
+    display: block;
+}
+}
+@media  (max-width:750px){
+    .nav > .nav-links {
+     width: 45%;   
+    }
+}
+@media  (max-width:600px){
+    .nav > .nav-links {
+     width: 55%;   
+    }
+}
+
+@media  (max-width:500px){
+    .nav > .nav-links {
+     width: 60%;   
+    }
+}
+@media  (max-width:450px){
+    .nav > .nav-links {
+     width: 68%;   
+    }
+}
+@media  (max-width:420px){
+    .nav > .nav-links {
+     width: 70%;   
+    }
+}
+@media  (max-width:400px){
+    .nav > .nav-links {
+     width: 73%;   
+    }
+}
+/* drop down list*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  display: none;
+  margin-left: -200px;
+  position: absolute;
+  background-color: #F5F7FA;
+  min-width: 300px;
+  height: 340px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+   animation-name: example;
+   animation-duration:1s;
+   border-radius: 10px; 
+   z-index: 999999;
+   margin-top: 17px;
+   transition: 0.3s all ease-in-out;
+   }
+    @keyframes example {
+    from {height:0vh;
+    padding-top:0px;
+    padding-bottom:0px;}
+    to {height:340px;
+    padding-top:10px;
+    padding-bottom:20px;}
+    }
+
+    .dropdown-content::after{
+        content: '';
+        top: -12.7%;
+        left: 68.5%;
+        position: absolute;
+        z-index: 999;
+         margin-left: -5px;
+        border-width: 25px;
+        border-style: solid;
+       border-color: transparent transparent #f1f1f1 transparent;
+    }
+
+    
+.dropdown-content a {
+  color: #204F7A;
+  padding:12px 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+}
+
+.dropdown a:hover {background-color: #fff;color: #204F7A;              
+       padding-left:20px; 
+}
+.dropdown span.More a:hover{
+    padding-left: 10px;
+    margin-left: 10px;
+}
+span.More{
+    
+}
+.show {display: block;}
+/* end here */
+  @media screen and (max-width:967px){
+      div.dropdown{
+          display: none;
+      }
+}
+div.welcome{
+ width: 100%;
+ margin: auto;
+ padding: 12px 16px;
+}
+p.Welcomeback{
+  padding-bottom: 15px;  
+}
+.status-bar {
+    margin-top: 25px;
+    width: 75px;
+    height: 45px;
+    border-radius: 10px; 
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+  }
+
+  .status-bar.online {
+    color: #fff;
+  }
+
+  .status-bar.offline {
+    color: #fff;
+  }
+  
+  .well-display{
+      display: none;
+  }
+  @media screen and (max-width:967px){
+      .well-display{
+          display: block;
+      }
+      .welcome{
+          display: none;
+      }
+      
+  }
+  
+  @media screen and (max-width:967px){
+      .my{
+          display: none;
+      }
+      .dropdown-content{
+       margin-top: -20px;   
+      }
+      .wel1{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 20px;
+      }
+  }
+  .Welcomeback,
+  .enterpin{
+      font-size: 20px;
+      color: #204F7A;
+      font-weight: 400;
+      transition: 0.3s all ease-in-out;
+      cursor: pointer;
+  }
+  .Welcomeback:hover{
+      padding-left: 10px;
+      border-radius: 5px;
+  }
+  .enterpin:hover{
+     padding-left: 10px;
+      border-radius: 5px; 
+  }
+  
+  h1.FULL_NAME,
+  h2.PIN_N{
+      padding:13px 10px 10px 10px;
+      font-size: 20px;
+      color: #204F7A;
+      font-weight: 400;
+      transition: 0.3s all ease-in-out;
+  }
+  h1.FULL_NAME:hover,
+  h2.PIN_N:hover{
+      padding-left: 20px;
+  }
+  .Grid-tittle{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      margin-left: 30px;
+      transition: all 0.9s ease;
+  }
+  
+  #fa-bars{
+      transition: 0.3s all ease-in;
+  }
+  
+  
+  .letter-container {
+  display: inline-block;
+}
+
+.circle {
+  position: relative; /* Add this line */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  color: #204F7A;
+  border: 1px solid;
+}
+
+.circle:hover{
+    border: 1px solid #ccc;
+}
+.letter {
+  font-size: 24px;
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.online {
+  background-color: green;
+}
+
+.offline {
+  background-color: red;
+}
+
+body{
+    background-color: #F5F7FA;
+}
+.Ma{
+    padding-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+.cookie-container {
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  bottom: -100%;
+  display: inline;
+  left: 0;
+  right: 0;
+  color: #1B395D;
+  background: #F1F1F1 !important;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 400ms;
+  border: 1px solid #ccc;
+  z-index: 99999999999999;
+}
+div.Cookie-flex{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+@media screen and (max-width:650px) {
+  div.Cookie-flex{
+    display: block;
+  }
+  .cookie-btn,
+  .cookie-btns{
+    margin-top: 10px;
+  }
+}
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-btn {
+font-family: inherit;
+font-weight: 400;
+background-color: #1B395D;
+  color: #fff;
+  padding: 1px 10px ;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  outline:none;
+  border: 1px solid #1B395D;
+}
+.cookie-btn:hover{
+    border: 1px solid #fff;
+ color: #1B395D;
+background-color: #fff;
+box-shadow: 0 0 8px 0 #000; 
+}
+.cookie-btns {
+	font-family: inherit;
+	font-weight: 400;
+  background-color: #fff;
+  color: #1B395D;
+  padding: 1px 10px ;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  outline:none;
+  border: 1px solid #1B395D;
+}
+.cookie-btns:hover{
+    border: 1px solid #fff;
+ color: #fff;
+background-color: #1B395D;
+box-shadow: 0 0 8px 0 #000; 
+}
+p.Cookie{
+  color: #1B395D;
+  margin-right: 20px;
+}
+
+
+.fa-rupee-sign{
+  font-size: 13px;
+margin-right: 3px;
+margin-left: 3px;
+}
+        body{
+            background-color: #F5F7FA;
+        }
+        div.Check-out{
+            width: 100%;
+            margin: auto;
+            padding-top: 90px;
+            padding-bottom: 20px;
+            transition: 0.3s all ease-in-out;
+        }
+        div.Check-out-1{
+            width: 70%;
+            margin: auto;  
+        }
+        @media screen and (max-width:810px){
+            div.Check-out-1{
+                width: 80%;
+            } 
+        }
+        @media screen and (max-width:705px){
+            div.Check-out-1{
+                width: 90%;
+            } 
+        }
+        div.Check-out-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.d{
+            padding-bottom: 20px;
+        }
+    .form-container {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    }  
+  p.Check-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #204F7A;
+    color: #fff;
+    font-weight: bold;
+  }
+  @media screen and (max-width:500px){
+      p.Check-circle {
+        width: 25px;
+        height: 25px;  
+      }
+  }
+  .double-line {
+    width: 300px;
+    height: 10px;
+    background: #204F7A;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+  @media screen and (max-width:800px){
+      .double-line {
+         width: 200px;  
+      }
+  }
+  @media screen and (max-width:600px){
+      .double-line {
+         width: 150px;  
+      }
+  }
+  
+  @media screen and (max-width:450px){
+      .double-line {
+         width: 100px;  
+      }
+  }
+  @media screen and (max-width:300px){
+      .double-line {
+         width: 50px;  
+      }
+  }
+  @media screen and (max-width:200px){
+      .double-line {
+         width: 30px;  
+      }
+  }
+  @media screen and (max-width:150px){
+      .double-line {
+         width: 20px;  
+      }
+  }
+  @media screen and (max-width:120px){
+      .double-line {
+         width: 10px; 
+         overflow: hidden;
+      }
+  }
+  div.Item-check{
+     background-color: #fff;
+     box-shadow: 0 0 2px 0 #000; 
+     width: 100%;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     padding-top: 7px;
+     padding-bottom: 7px;
+     border-radius: 5px;
+  }
+  @media screen and (max-width:150px){
+      div.Item-check{
+          overflow: hidden;
+      } 
+  }
+  div.Line-Items{
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 5px;
+  }
+  div.List-Check{
+      width: 73%;
+      margin: auto;
+  }
+  @media screen and (max-width:1155px){
+      div.List-Check{
+         width: 80%; 
+      }
+  }
+  @media screen and (max-width:1010px){
+      div.List-Check{
+         width: 90%; 
+      }
+  }
+  @media screen and (max-width:900px){
+      div.List-Check{
+         width: 100%; 
+      }
+  }
+
+  p.Items{
+      color: #204F7A;
+      font-size: 20px;
+  }
+  div.Item-check{
+      padding: 10px 15px;
+      
+  }
+  
+  p.Item-Name{
+      font-size: 20px;
+      color: #204F7A;
+  }
+  p.List-Items{
+    font-size: 20px;
+    color: #204F7A; 
+    line-height: 25px;
+  }
+  @media screen and (max-width:555px){
+      p.List-Items{
+     font-size: 16px;
+  }
+  }
+  @media screen and (max-width:452px){
+      p.List-Items{
+     font-size: 14px;
+  }
+  }
+  @media screen and (max-width:401px){
+      p.List-Items{
+     font-size: 13.5px;
+  }
+  }
+  @media screen and (max-width:225px){
+      p.List-Items{
+     font-size: 14px;
+  }
+  }
+  hr.Hr-Line{
+      color: #204F7A;
+      border: 0.5px solid #204f7a0f;
+  }
+  div.Total-price{
+      text-align: right;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 20px;
+  }
+  div.Item-Names{
+      padding-top: 10px;
+      padding-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  @media screen and (max-width:630px){
+      div.Item-Names{
+     display: block;
+  }
+  div.List-Names-2{
+      margin-top: 15px;
+      margin-bottom: 7.5px;
+  }
+  }
+  a.Go_Back{
+      content: '23';
+      font-size: 18px;
+      text-decoration: none;
+      color: #204F7A;
+      background-color: transparent;
+      border: 1px solid #204F7A;
+      padding: 5px 10px;
+      border-radius: 5px;
+  }
+  @media screen and (max-width:405px){
+    a.Go_Back{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:225px){
+    a.Go_Back{
+        font-size: 14px;
+        padding: 4px 7.5px;
+    }
+}
+  a.Go_Back:hover{
+     background-color: #204F7A;
+     color: #fff;
+     border: 1px solid #FFF;
+  }
+  .Go_Back .Angle-Down {
+  transition: transform 0.3s ease-in-out;
+}
+
+.Go_Back:hover .Angle-Down i {
+  transform: rotate(180deg);
+}
+div.Total-Price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:390px){
+    div.Total-Price{
+        display: block;
+        text-align: right;
+    }
+}
+div.Total-Price-1{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+a.Circle-Round-Name{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    background-color: #204F7A;
+    border-radius: 5px;
+}
+@media screen and (max-width:410px){
+    a.Circle-Round-Name{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:395px){
+    a.Circle-Round-Name{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:225px){
+    a.Circle-Round-Name{
+        font-size: 14px;
+        padding: 5px 7.5px;
+    }
+    p.Total-price-items{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:225px){
+    a.Circle-Round-Name{
+        font-size: 11px;
+        padding: 4px 6.5px;
+    }
+    p.Total-price-items{
+        font-size: 11px;
+            padding-right: 0px;
+    }
+}
+@media screen and (max-width:147px){
+    a.Circle-Round-Name{
+        font-size: 7px;
+        padding: 3px 5.5px;
+    }
+}    
+a.Circle-Round-Name:hover{
+    background-color: #FFF;
+    color: #204F7A;
+    border: 1px solid #204F7A;
+}
+span.Cirlce-Plus{
+    margin-right: 5px;
+}
+div.Total-Price-2{
+    padding-right: 20px;
+    padding-top: 0px;
+}
+p.Total-price-items{
+   color: #204F7A;
+   font-size: 18px;
+   font-weight: 700;
+}
+span.Price-items{
+    font-weight: 700;
+    font-family: sans-serif;
+}
+@media screen and (max-width:420px){
+    div.Total-Price-2{
+        padding-top: 0px;
+        padding-right: 5px;
+    }
+}
+@media screen and (max-width:225px){
+    div.Total-Price-2{
+        padding-top: 0px;
+        padding-right: 5px;
+    }
+    p.Total-price-items{
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width:175px){
+  p.Total-price-items{
+        font-size: 12px
+    }  
+}
+p.Items {
+  font-family: sans-serif;
+  margin-top: 20px;
+  color: #204F7A;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+span.Onhover-Item{
+    color: #204F7A;
+    background-color: #F5F7FA;
+    z-index: 99;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+}
+p.Items:before,
+p.Items:after {
+  content: "";
+  display: block;
+  width: 100%; /* Adjust the width as per your preference */
+  height: 2px;
+  background: #204F7A;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+p.Items:before {
+  left: 0;
+}
+
+p.Items:after {
+  right: 0;
+}
+
+div.Saving-Amount{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+div.Saving-Amount-2{
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div.noresults{
+color: red;
+font-size: 14px;
+}
+div.Search-coupon{
+width: 100%;
+margin: auto;
+}
+div.Search-coupon-1{
+width: 80%;
+margin: auto;
+}
+@media screen and (max-width:325px){
+div.Search-coupon-1{
+width: 95%;
+}
+}
+div.Search-bar-coupon{
+padding-top: 5px;
+padding-bottom: 10px;
+}
+input[type="text"]{
+outline: none;
+width: 95%;
+padding-top: 17px;
+padding: 15px;
+font-size: 20px;
+border-radius: 5px;
+border: 2px solid #204F7A;
+border-top: 2px solid #204F7A;
+border-left: 2px solid #204F7A;
+border-bottom: 2px solid #204F7A;
+border-right: 1px solid #204F7A;
+color:#204F7A;
+z-index: 999;
+transition: all 0.3s ease-in;
+}
+@media screen and (max-width:450px){
+input[type="text"]{
+font-size: 18px; 
+}
+}
+@media screen and (max-width:390px){
+input[type="text"]{
+width: 100%;
+}
+}
+input[type="text"]:hover{
+box-shadow: 0 0 2px 0 #204F7A;
+border: 2px solid #204F7A;
+}
+input[type="text"]:focus{
+box-shadow: 0px 0px 8px 0 #204F7A;
+} 
+button#searchButton{
+margin-left: -100px;
+padding: 7px 15px;
+border-radius: 5px;
+background-color: #204F7A;
+color: #fff;
+border: 1px solid #fff;
+cursor: pointer;
+font-size: 14px;
+}
+@media screen and (max-width:450px){
+button#searchButton{
+font-size: 12px;
+padding: 3.5px 7.5px;
+margin-left: -80px;
+}
+}
+@media screen and (max-width:390px){
+button#searchButton{
+font-size: 12px;
+padding: 3.5px 7.5px;
+margin-left: 0px;
+margin-top: 10px;
+}
+}
+button#searchButton:hover{
+border: 1px solid #204F7A;
+color: #204F7A;
+background-color: #fff;
+box-shadow: 0 0 2px 0 #000;
+}
+
+div.Gift-coupon-1{
+display: flex;
+gap:5px;
+margin-top: 10px;
+}
+                                                    .fa-gift{
+                                                        font-size: 20px;
+                                                        color: #204F7A;
+                                                    }
+                                                    p.Gift-Section{
+                                                        font-size: 18px;
+                                                        color: #204F7A;
+                                                    }
+                                                    @media screen and (max-width:500px){
+                                                        p.Gift-Section{
+                                                            font-size: 16px;
+                                                        }
+                                                    }
+                                                    li.Gift{
+                                                        font-size: 16px;
+                                                        color: #204F7A;
+                                                        padding-top: 3px;
+                                                    }
+                                                    @media screen and (max-width:500px){
+                                                        li.Gift{
+                                                            font-size: 14px;
+                                                        }
+                                                    }
+                                                    h5.Offer-for{
+                                                        color: #204F7A;
+                                                        font-size: 20px;
+                                                        margin-top: 10px;
+                                                    }
+                                                    @media screen and (max-width:210px){
+                                                        h5.Offer-for{
+                                                            font-size: 16px;
+                                                        }
+                                                    }
+                                                    p.Offer-Yu{
+                                                        color: #757575;
+                                                        font-size: 14px;
+                                                    }
+                                                    @media screen and (max-width:210px){
+                                                        p.Offer-Yu{
+                                                            font-size: 10px;
+                                                        }
+                                                    }
+                                                    div.Coupons-Applying{
+                                                        width: 100%;
+                                                        margin: auto;
+                                                        margin-top: 15px;
+                                                    }
+                                                    div.Coupons-Applying-1{
+                                                        width: 90%;
+                                                        margin: auto;
+                                                        transition: 0.3s all ease-in-out; 
+                                                    }
+                                                    @media screen and (max-width:700px){
+                                                       div.Coupons-Applying-1{
+                                                        width: 100%;
+                                                        margin: auto;
+                                                    } 
+                                                    }
+                                                    div.Coupons-Applying-2{
+                                                        background-color: #fff;
+                                                        box-shadow: 0 0 8px 0 #ccc;
+                                                        border-radius: 5px;
+                                                        border: 1px solid #fff;
+                                                    }
+                                                    div.Coupons-Applying-3{
+                                                         display: flex;
+                                                         align-items: center;
+                                                         gap:15px;
+                                                         padding: 10px 15px;
+                                                    }
+                                                    @media screen and (max-width:325px){
+                                                        div.Coupons-Applying-3{
+                                                            display: block;
+                                                        }
+                                                    }
+                                                    p.First-Order-T{
+                                                        background-color:#ECF3FE;
+                                                        color: #204F7A;
+                                                        font-size: 16px;
+                                                        font-weight: 700;
+                                                        padding: 8px 14px;
+                                                        border-radius: 5px;
+                                                    }
+                                                    @media screen and (max-width:400px){
+                                                         p.First-Order-T{
+                                                           font-size: 13px;
+                                                        }
+                                                        p.Amount-Value{
+                                                            font-size: 13px;
+                                                        }
+                                                    }
+                                                    @media screen and (max-width:325px){
+                                                         p.First-Order-T{
+                                                           font-size: 13px;
+                                                           text-align: center;
+                                                        }
+                                                    }
+                                                    p.Total-Coupon-Offer{
+                                                        color: #204F7A;
+                                                        font-size: 16px;
+                                                        font-family: sans-serif;
+                                                    }
+                                                    @media screen and (max-width:400px){
+                                                        p.Total-Coupon-Offer{
+                                                           font-size: 13px;
+                                                        }
+                                                    }
+                                                    @media screen and (max-width:325px){
+                                                        p.Total-Coupon-Offer{
+                                                           display: none;
+                                                        }
+                                                    }
+                                                    div.Amount-Coupon{
+                                                        margin-top: 0px;
+                                                        margin-bottom: 10px;
+                                                        margin-left: 10px;
+                                                        color: #204F7A;
+                                                    }
+                                                    div.T-C-Apply{
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        background-color: #ECF3FE;
+                                                        padding: 10px 15px;
+                                                        align-items: center;
+                                                        border-radius: 5px;
+                                                    }
+                                                    @media screen and (max-width:205px){
+                                                        div.T-C-Apply{
+                                                            display: block;
+                                                        }  
+                                                        p.T_C{
+                                                            margin-bottom: 10px;
+                                                        }
+                                                    }
+                                                    p.T_C{
+                                                        color: #204F7A;
+                                                        font-size: 16px;
+                                                    }
+                                                    button.APPLY_BTN{
+                                                        padding: 5px 13px;
+                                                        border-radius: 5px;
+                                                        color: #204F7A;
+                                                        background-color: transparent;
+                                                        border: 1px solid #204F7A;
+                                                        cursor: pointer;
+                                                    }
+                                                    button.APPLY_BTN:hover,button.APPLY_BTN:focus{
+                                                        color: #fff;
+                                                        background-color: #204F7A;
+                                                        border: 1px solid #fff;
+                                                    }
+                                                    div.Red-Min{
+                                                        padding-top: 5px;
+                                                        padding-bottom: 5px;
+                                                        text-align: right;
+                                                        display: none;
+                                                    }
+                                                    p.MUST_VALUE{
+                                                        color: red;
+                                                        font-size: 12px;
+                                                        font-family: sans-serif;
+                                                    }
+                                                    div.Flex-Button-Coupons{
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: space-between;
+                                                         flex-wrap: wrap;
+                                                    }
+                                                    @media screen and (max-width:270px){
+                                                        div.Flex-Button-Coupons{
+                                                            display: block;
+                                                            overflow: hidden;
+                                                        }
+                                                        div.Coupon_button{
+                                                            margin-top: 10px;
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    div.Item-check-coupon{
+                                                        width: 50%;
+                                                    }
+                                                    @media screen and (max-width:270px){
+                                                        div.Item-check-coupon{
+                                                            width: 100%;
+                                                       }
+                                                    }
+                                                    div.Coupon_button{
+                                                        width: 50%;
+                                                        text-align: right;
+                                                    }
+                                                    @media screen and (max-width:270px){
+                                                        div.Coupon_button{
+                                                            margin-top: 10px;
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    button.Open_modal-btn{
+                                                        padding: 5px 10px;
+                                                        border: 1px solid #204F7A;
+                                                        background-color: #fff;
+                                                        color: #204F7A;
+                                                        border-radius: 5px;
+                                                        cursor: pointer;
+                                                    }
+                                                    button.Open_modal-btn:hover,button.Open_modal-btn:focus{
+                                                        border: 1px solid #2980b9;
+                                                        color: #fff;
+                                                        background-color: #204F7A;
+                                                        box-shadow: 0 0 8px 0 #204F7A;
+                                                    }
+                                                    div.Display_Coupon{
+                                                        color: #2980b9;
+                                                        font-size: 18px;
+                                                        padding-top: 10px;
+                                                    }
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                     div.Sub-Total{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        padding-left:10px;
+                                        padding-right: 10px;
+                                    }
+                                    
+                                    div.Amount_Of_Coupon,div.Amount_Of_Coupon-1{
+                                        color: #204F7A;
+                                        font-size: 20px;
+                                        font-family: sans-serif;
+                                        font-weight: 700;
+                                    }
+                                    p.Subtotal{
+                                        color: #204F7A;
+                                        font-size: 18px;    
+                                    }
+                                    div.Coupon-Decrease{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        padding-left:10px;
+                                        padding-right: 10px;
+                                        padding-top: 8px;
+                                    }
+                                    div.decrase_Of_Coupon{
+                                        color: #204F7A;
+                                        font-size: 18px;
+                                        font-family: sans-serif;
+                                        font-weight: 700;
+                                    }
+                                    div.Delivery-Option{
+                                        padding-top: 8px;
+                                        padding-bottom: 5px;
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                    }
+                                    div.Delivery-Img-1{
+                                        display: flex;
+                                        gap:10px;
+                                    }
+                                    p.Delivery-Fee-1{
+                                        color: #204F7A;
+                                        font-size: 16px;
+                                    }
+                                    p.Delivery-Fee-2{
+                                        color: #2980b9;
+                                        font-size: 12px;
+                                    }
+                                    img.Delivery-Img{
+                                        width: 20px;
+                                    }
+                                    p.Delivery-Amount{
+                                        color: #204F7A;
+                                        font-size: 16px;
+                                        font-family: sans-serif;
+                                        font-weight: 700;
+                                    }
+                                    hr.Line-Mark-Hr-1{
+                                        border: 1px solid #204f7a0f;
+                                    }
+                                    div.Grand-Total{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        padding-left:10px;
+                                        padding-right: 10px;
+                                        padding-top: 8px;  
+                                    }
+                                    p.Value-Total{
+                                        color: #204F7A;
+                                        font-size: 18px;
+                                    }
+                                    p.Grand-Total-Value{
+                                        color: #204F7A;
+                                        font-size: 18px;
+                                        font-family: sans-serif;
+                                        font-weight: 700;
+                                    }
+                                    
+                                    
+                                    
+.Address-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 99999999; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s all ease-in-out;
+}
+
+/* Modal content styles */
+.Address-modal-content {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  margin: 100px auto 20px;;
+  padding: 20px;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+
+/* Close button styles */
+.Address-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #204F7A;
+  font-weight: 900;
+  transition: 0.3s all ease-in-out;
+}
+
+h1.Your-Address{
+  color: #204F7A;
+font-size: 25px;
+text-align: center;
+padding-bottom: 10px;
+}
+div.Address-show-1{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 20px;
+    
+}
+input[type="radio"]{
+    accent-color: #204F7A;
+    button-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+p.Address-p{
+      color: #204F7A;
+      font-size: 20px;
+      padding-bottom: 7px;
+    }
+span.Inside-P{
+        background-color: #cccccc8a;
+        padding: 2.5px 5px;
+        margin-left: 5px;
+    }
+    p.Span-inside{
+        padding-bottom: 5px;
+        color: #204F7A;
+    }
+    span.Address-span{
+        color: #204F7A;
+        font-size: 18px;
+        margin-bottom:5px;
+    }
+    p.T-Edit{
+        color: #204F7A;
+        font-size: 16px;
+        font-family: serif;
+    }
+    a.Edit-A{
+        text-decoration: none;
+        color: #204F7A;
+    }
+    a.Edit-A:hover{
+        text-decoration: underline;
+    }
+    div.Close-A-Btn{
+        text-align: center;
+    }
+    button.Close-Address{
+        color: #fff;
+        background-color: #204F7A;
+        padding: 5px 15px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+    }
+    button.Close-Address:hover{
+        color: #204F7A;
+        background-color: #fff;
+        border:1px solid #204F7A;
+        box-shadow: 0 0 8px 0 #ccc;
+    }
+    p.Add-your-Address{
+        color: #204F7A;
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 4px;
+    }
+    div.Address-Flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 5px;
+        gap:10px;
+    }
+    @media screen and (max-width:400px){
+        div.Address-Flex{
+            display: block;
+        }
+    }
+    div.Showing-Address{
+        color: #204F7A;
+        line-height: 25px;
+        font-size: 18px;
+    }
+    @media screen and (max-width:400px){
+        div.Showing-Address{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    button.Open-Button-Modal{
+        background-color: #204F7A;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 5px 12px;
+        transition: 0.3s all ease-in-out;
+        cursor: pointer;
+    }
+    button.Open-Button-Modal:hover{
+        color: #204F7A;
+        background-color: #fff;
+        border: 1px solid #204F7A;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    input[type="name-1"]{
+        width: 48%;
+        padding: 7px 20px;
+        color: #204F7A;
+        border: 2px solid #204F7A;
+        margin-top: 10px;
+        border-radius: 5px;
+        outline: none;
+        margin-left: 1%;
+    }
+    input[type="name-1"]:hover,input[type="name-1"]:focus{
+        border: 2px solid;
+        box-shadow: 0 0 3px 0 #2980b9;
+    }
+    select.Month,select.year{
+        text-align: center;
+        width: 48%;
+        padding: 7px 20px;
+        color: #204F7A;
+        border: 2px solid #204F7A;
+        margin-top: 10px;
+        border-radius: 5px;
+        outline: none;
+        margin-left: 1%;
+    }
+    input[type="password"]{
+        width: 98%;
+       padding: 7px 20px;
+        color: #204F7A;
+        border: 2px solid #204F7A;
+        margin-top: 10px;
+        border-radius: 5px;
+        outline: none;
+        margin-left: 1%;
+    }
+    input[type="password"]:hover,input[type="password"]:focus{
+        border: 2px solid;
+        box-shadow: 0 0 3px 0 #2980b9;
+    }
+div.Card-Payment,.Upi-payment,label.card-verify,label.Error-card,label.Upi-verify,label.Error-Upi{
+display: none;
+}
+.card-verify {
+  display: none;
+}
+
+.card-verify.verified {
+  display: inline-block; /* or any other appropriate display property */
+}
+    div.Pay-btn,div.Card-center{
+        text-align: center;
+    }
+    div.Upi-payment{
+        margin-top: 10px;
+    }
+    label.Upi-verify,label.card-verify{
+        color: green;
+        padding-top: 8px;     
+    }
+    label.Error-Upi,label.Error-card{
+        padding-top: 8px;
+        color: red;
+    }
+    button.UPI-PAY{
+        color: #204F7A;
+        background-color: #fff;
+        padding: 7px 20px;
+        margin-top: 10px;
+        border: 1px solid #204F7A;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button.UPI-PAY:hover,button.UPI-PAY:focus{
+        border: 1px solid #204F7A;
+        background-color: #204F7A;
+        color: #fff;
+        box-shadow: 0 0 3px 0 #2980b9;
+    }
+    input[type="upi"]{
+        width: 70%;
+        padding: 7px 20px;
+        text-align: center;
+        border: 2px solid #204F7A;
+        border-radius: 5px;
+        outline: none;
+        color: #204F7A;
+    }
+    @media screen and (max-width:390px){
+        input[type="upi"]{
+            width: 100%;
+        }
+    }
+    input[type="upi"]:hover,input[type="upi"]:focus{
+        border: 2px solid;
+        box-shadow: 0 0 3px 0 #2980b9;
+    }
+    label.Pay-ment{
+        color: #204F7A;
+        font-size: 16px;
+    }
+    select.Pay-ment-Modes{
+        width: 70%;
+        padding: 7px 20px;
+        margin-left: 20px;
+        border: 2px solid #204F7A;
+        border-radius: 5px;
+    }
+    @media screen and (max-width:1135px){
+       select.Pay-ment-Modes{
+        width: 60%;
+       }
+    }
+    @media screen and (max-width:550px){
+       select.Pay-ment-Modes{
+        width: 50%;
+       }
+    }
+    @media screen and (max-width:440px){
+       select.Pay-ment-Modes{
+        width: 45%;
+       }
+    }
+    @media screen and (max-width:400px){
+       select.Pay-ment-Modes{
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 0px;
+       }
+    }
+    select.Pay-ment-Modes option {
+  background-color: #fff;
+  color: #204F7A;
+}
+select.Pay-ment-Modes option:hover {
+  background-color: #204F7A;
+  color: #fff;
+}
+    div.Upi-payment,div.Card-Payment{
+        display: none;
+    }
+    div.Upi-payment,div.Card-Payment{
+        color: #204F7A;
+    }
+    div.Footer-Complete{
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #204F7A;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    div.Com-Footer {
+    display: noe;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .modal {
+  display: none; 
+  position: fixed;
+  z-index: 99999999; 
+  padding-top: 80px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+  margin: auto;
+  transition: 0.3s all ease-in-out;
+  padding-bottom: 10px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 0 2px 0 #fff;
+  transition: 0.3s all ease-in-out;
+  padding-bottom: 40px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width:500px){
+    .modal-content {
+        width: 90%;
+    }
+}
+@media screen and (max-width:150px){
+    .modal-content {
+        width: 95%;
+        overflow: hidden;
+    }
+}
+.close {
+  color: #204F7A;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -13px;
+  margin-right: 3px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  right: 0;
+  
+}
+
+
+
+
+  .popup-message {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f8f8f8;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s;
+        z-index: 99999;
+    }
+
+    .popup-message.show {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+    
+    button.Complete-Footer{
+        border: 2px solid #204F7A;
+        color: #204F7A;
+        background-color: #FFF;
+        padding: 7px 20px;
+        border-radius: 5px; 
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+    }
+    button.Complete-Footer:hover,button.Complete-Footer:focus{
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: #204F7A;
+        box-shadow: 0 0 8px 0 #2980b9;
+    }
+    #Address-label-list{
+        display: none;
+    }
