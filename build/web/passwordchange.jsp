@@ -164,8 +164,17 @@ and open the template in the editor.
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
           <div class="nav-title">
-              <a class="tum-tum" href="Home.jsp">TruYum
+              <a class="tum-tum" href="Home.jsp">
+                  <div class="Grid-tittle">
+                      <div class="tittle-img">
+                          <img src="images/Tru_yum-Transparent.png" width="40px" tittle="TruYum" alt="TruYum" >
+                      </div>
+                      <div class="tittle-name">
+                          TruYum
                 <i id="Knife" class="fad fa-utensils-alt"></i>
+                      </div>
+                  </div>
+                  
             </a>
           </div>
         </div>

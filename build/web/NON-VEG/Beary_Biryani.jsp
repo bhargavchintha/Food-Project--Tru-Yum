@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="../Bubbls.css">
     <link rel="stylesheet" type="text/css" href="../Terms-conditions.css ">
     <link rel="stylesheet" type="text/css" href="Non_Veg.css">
+    <script type="text/javascript" src="NoN_Script.js" defer></script>
+     
     </head>
     
 <%@page import="java.sql.*"%>
@@ -198,7 +200,7 @@ if (request.getParameter("addToCart") != null) {
 
 <body>
     
-        <div class="nav">      
+    <div class="nav">      
         <input type="checkbox" id="nav-check" title="Checkbox" placeholder="checkbox" >
         <div class="nav-header">
           <div class="nav-title">
@@ -219,20 +221,6 @@ if (request.getParameter("addToCart") != null) {
         <div class="nav-btn">
           <label for="nav-check">
             <i id="fa-bars" class="fa fa-bars" aria-hidden="true" onclick="toggleIcon()"></i>
-
-<script>
-  function toggleIcon() {
-    var icon = document.getElementById("fa-bars");
-    
-    if (icon.classList.contains("fa-bars")) {
-      icon.classList.remove("fa-bars");
-      icon.classList.add("fa-times");
-    } else {
-      icon.classList.remove("fa-times");
-      icon.classList.add("fa-bars");
-    }
-  }
-</script>
         </label>
         </div>
         
@@ -254,89 +242,35 @@ if (request.getParameter("addToCart") != null) {
           <a class="Links-None" href="../passwordchange.jsp">Change Password</a>
           <a class="Links-None" href="../About.jsp">About</a>
           <a class="Links-None" href="../Address.jsp">Address</a>
-          <a class="Links-None" href="../Address.jsp">Address</a>
+          <a class="Links-None" href="../Your_Order_List.jsp">Order List</a>
           <a class="Links-None" href="../logout.jsp">Logout</a>
-          
-         
-<div class="dropdown">
-    <div class="my">
-        <div onclick="myFunction()" class="circle">
-            <span class="letter"><%= FirstLetterCapitalized %> </span>
-            <span class="status-dot"></span>
+                  
+            <div class="dropdown">
+                <div class="my">
+                    <div onclick="myFunction()" class="circle">
+                        <span class="letter"><%= FirstLetterCapitalized %> </span>
+                        <span class="status-dot"></span>
+                    </div>
+                </div>         
+              <div id="myDropdown" class="dropdown-content">
+                <div class="welcome"> 
+                  <div class="welcome-1">
+                    <%
+                     out.println("<p class=\"Welcomeback\">Welcome,&nbsp;" + FullName + "</p>");
+                     out.println("<p class=\"enterpin\" > Your PIN: " + pin + "</p>");
+                     %>
+                  </div>
+
+                </div>
+                  <a href="../passwordchange.jsp">Change Password</a>
+                  <a href="../About.jsp">About</a>
+                  <a href="../Address.jsp">Address</a>
+                  <a href="../Your_Order_List.jsp">Order List</a>
+                  <a href="../logout.jsp">Logout</a>
+              </div>
+            </div>
         </div>
-    </div>         
-  <div id="myDropdown" class="dropdown-content">
-    <div class="welcome"> 
-      <div class="welcome-1">
-        <%
-         out.println("<p class=\"Welcomeback\">Welcome,&nbsp;" + FullName + "</p>");
-         out.println("<p class=\"enterpin\" > Your PIN: " + pin + "</p>");
-         %>
-      </div>
-      
     </div>
-    <a href="passwordchange.jsp">Change Password</a>
-    <a href="About.jsp">About</a>
-     <a href="Address.jsp">Address</a>
-    <a href="Address.jsp">Address</a>
-    <a href="logout.jsp">Logout</a>
-  </div>
-</div>
-
-<script>
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.circle') && !event.target.matches('.letter')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-<script>
-  function updateStatusDot() {
-    var isOnline = navigator.onLine;
-    var statusDotClass = isOnline ? 'online' : 'offline';
-    var statusDot = document.querySelector('.status-dot');
-    statusDot.className = 'status-dot ' + statusDotClass;
-  }
-
-  window.addEventListener('online', updateStatusDot);
-  window.addEventListener('offline', updateStatusDot);
-
-  // Initial update
-  updateStatusDot();
-</script>
-
-
-<script>
-  function updateStatusBar() {
-    var isOnline = navigator.onLine;
-    var statusBar = document.querySelector('.status-bar');
-    statusBar.textContent = isOnline ? 'Online' : 'Offline';
-    statusBar.title = isOnline ? 'Online' : 'Offline';
-    statusBar.classList.toggle('offline', !isOnline);
-  }
-
-  window.addEventListener('online', updateStatusBar);
-  window.addEventListener('offline', updateStatusBar);
-
-  // Initial update
-  updateStatusBar();
-</script>
-          
-        </div>
-        
-      </div>
         
 
 
@@ -391,7 +325,20 @@ window.onclick = function(event) {
               </div>
           </div>
       </div> 
-      
+<div class="Script_JS">                  
+<script>
+  function toggleIcon() {
+    var icon = document.getElementById("fa-bars");
+    
+    if (icon.classList.contains("fa-bars")) {
+      icon.classList.remove("fa-bars");
+      icon.classList.add("fa-times");
+    } else {
+      icon.classList.remove("fa-times");
+      icon.classList.add("fa-bars");
+    }
+  }
+</script>
       
 <script>
 function myFunction() {
@@ -443,9 +390,7 @@ window.onclick = function(event) {
   // Initial update
   updateStatusBar();
 </script>
-          
-     
-
+        
     <script>
             var popupMessage = document.getElementById("popupMessage");
                 popupMessage.classList.add("show");
@@ -454,9 +399,8 @@ window.onclick = function(event) {
                 }, 2000);
         </script>
       
-      
-      
-      
+</div>      
+ 
       
       
       
@@ -694,7 +638,7 @@ window.onclick = function(event) {
     }
     }, 100);
       </script>
-    <div> </div>
+      
     </body>
 </html>
     
