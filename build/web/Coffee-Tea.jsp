@@ -91,6 +91,8 @@ if (request.getParameter("addToCart") != null) {
                         Item added to cart!
                     </div>
 <%
+    
+     response.sendRedirect("myCart.jsp");
                 } else {
                     // Item insertion failed
                     // response.sendRedirect("TodaySpecial.html?message=Item Does not add to Cart");
@@ -152,6 +154,7 @@ if (request.getParameter("addToCart") != null) {
                             Item added to Order!
                         </div>
 <%
+     response.sendRedirect("Order.jsp");
                     } else {
                         // Item insertion failed
                         // response.sendRedirect("TodaySpecial.html?message=Item Does not add to Order");

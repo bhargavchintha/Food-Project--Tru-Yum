@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cafe Latte | TruYum Restaurant | All Food Items</title>
+        <title>Cappuccino Coffee | TruYum Restaurant | All Food Items</title>
         <link rel="icon" href='../images/TRU-YUM.png' />
     <!--this is fontawesome pro icon script start here--><link href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" rel="stylesheet"><!--end here-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

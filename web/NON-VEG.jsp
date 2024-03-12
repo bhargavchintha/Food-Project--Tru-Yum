@@ -1052,7 +1052,7 @@ a.LINK-h1 {
                                     <!-- Add to Cart Form -->
                                     <form action="NON-VEG.jsp" method="post">
                                             <input type="hidden" name="itemid" value="NV-10" /><!-- NV means NON-VEG -->
-                                            <input type="hidden" name="itemname" value="Dindigul Biryani" />
+                                            <input type="hidden" name="itemname" value="Thalapakatti Mutton Biryani" />
                                             <input type="hidden" name="itemprice" value="510" />
                                             <input type="hidden" name="image" value="images/Non-VEG/Thalapakatti-Mutton-Biryani.jpg" />
                                             <input type="hidden" name="link" value="NON-VEG/Thalapakatti_Mutton_Biryani.jsp"/>
@@ -1064,7 +1064,7 @@ a.LINK-h1 {
                                        <!-- Add to Order Form -->
                                        <form action="NON-VEG.jsp" method="post">
                                             <input type="hidden" name="itemid" value="NV-10" /><!-- NV means NON-VEG -->
-                                            <input type="hidden" name="itemname" value="Dindigul Biryani" />
+                                            <input type="hidden" name="itemname" value="Thalapakatti Mutton Biryani" />
                                             <input type="hidden" name="itemprice" value="510" />
                                             <input type="hidden" name="image" value="images/Non-VEG/Thalapakatti-Mutton-Biryani.jpg" />
                                             <input type="hidden" name="link" value="NON-VEG/Thalapakatti_Mutton_Biryani.jsp"/>
@@ -1120,7 +1120,7 @@ a.LINK-h1 {
                                     <!-- Add to Cart Form -->
                                     <form action="NON-VEG.jsp" method="post">
                                             <input type="hidden" name="itemid" value="NV-11" /><!-- NV means NON-VEG -->
-                                            <input type="hidden" name="itemname" value="Dindigul Biryani" />
+                                            <input type="hidden" name="itemname" value="Beary Biryani" />
                                             <input type="hidden" name="itemprice" value="275" />
                                             <input type="hidden" name="image" value="images/Non-VEG/Beary-Biryani.png" />
                                             <input type="hidden" name="link" value="NON-VEG/Beary_Biryani.jsp"/>
@@ -1132,7 +1132,7 @@ a.LINK-h1 {
                                        <!-- Add to Order Form -->
                                        <form action="NON-VEG.jsp" method="post">
                                              <input type="hidden" name="itemid" value="NV-11" /><!-- NV means NON-VEG -->
-                                            <input type="hidden" name="itemname" value="Dindigul Biryani" />
+                                            <input type="hidden" name="itemname" value="Beary Biryani" />
                                             <input type="hidden" name="itemprice" value="275" />
                                             <input type="hidden" name="image" value="images/Non-VEG/Beary-Biryani.png" />
                                             <input type="hidden" name="link" value="NON-VEG/Beary_Biryani.jsp"/>

@@ -205,6 +205,10 @@ window.onclick = function(event) {
     <a href="Checkout.jsp">
         Check Out
     </a>
+    <br>
+    <a href="Coffee-Tea_1.jsp">
+        Coffee
+    </a>
       
       
       

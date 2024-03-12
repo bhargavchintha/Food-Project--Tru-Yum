@@ -91,8 +91,6 @@ if (request.getParameter("addToCart") != null) {
                         Item added to cart!
                     </div>
 <%
-    
-     response.sendRedirect("myCart.jsp");
                 } else {
                     // Item insertion failed
                     // response.sendRedirect("TodaySpecial.html?message=Item Does not add to Cart");
@@ -154,7 +152,6 @@ if (request.getParameter("addToCart") != null) {
                             Item added to Order!
                         </div>
 <%
-     response.sendRedirect("Order.jsp");
                     } else {
                         // Item insertion failed
                         // response.sendRedirect("TodaySpecial.html?message=Item Does not add to Order");
@@ -394,14 +391,7 @@ window.onclick = function(event) {
         
       </div>
   
-
-
-
   
-<style>
-   
-</style>
-   
 
 
   <div class="today-special">
@@ -411,6 +401,149 @@ window.onclick = function(event) {
     <div id="button-container">
       <div class="conta">
 
+          
+          
+          
+          
+          <style>
+              div.conta{
+                  display: flex;
+                  flex-wrap: wrap;
+              }
+              div.Coffee-Height{
+                  padding-top: 30px;
+              }
+              div.Matter-Cap_Coff{
+                  width: 100%;
+                  margin: auto
+              }
+              img.cap_coffe{
+                  width: 118px;
+                  height: 96px;
+                  object-fit: cover;
+                  border-radius: 6px;
+              }
+              div.Matter-Grid{
+                  display: grid;
+                  grid-template-columns:auto auto;
+                  align-items: center;
+                  width: 80%;
+                  margin: auto;
+                  grid-gap:30px;
+              }
+              div.Matter-Coffee-Grid-1{
+                  float: left;
+              }
+              div.Coffee-Height{
+                  float: right;
+              }
+              a.Cap_Coff{
+                  color: #efeded;
+                  font-size: 30px;
+                  margin-top: 10px;
+                  margin-bottom: 18px;
+                  font-weight: 800;
+                  text-decoration: none;
+              }
+              a.Cap_Coff:hover{
+                text-shadow: 0.5px 0.5px 1px #000, 0 0 1em #fff, 0 0 0.2em #fff;
+              }
+              p.Ma-Cff{
+                  color: #fff;
+                  padding-top: 15px;
+              }
+              button.Add-cart-grilled{
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  background-image: linear-gradient(45deg, #2f2e2e 0%, #030101  51%, #2f2e2e  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   transition: all 0.3s ease-in-out; 
+   font-size: 15px;
+   background-position: left center;
+}
+
+button.Add-cart-grilled:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0px 0px 14px -7px #fff;
+}
+
+button.Add-cart-grilled:active {
+  transform: scale(0.95);
+}
+          </style>
+          <div class="hai">
+              <div class="Matter-Cap_Coff">
+                  <div class="Matter-Grid">
+                      <div class="Matter-Coffee-Grid-1">
+                          <a class="Cap_Coff" href="Coffee_Tea/Cappuccino_Coffee.jsp">Cappuccino Coffee</a>
+                          <p class="Ma-Cff">
+                              The coffee is made up of three layers, that is, a shot of espresso, a layer of foamy milk as well as a shot of steamed milk.
+                          </p>
+                          <button class="Add-cart-grilled" >Add to cart</button> <button class="Add-cart-grilled" >Add to cart</button>
+                      </div>
+                      <div class="Coffee-Height">
+                        <img class="cap_coffe" src="images/Coffee-Tea/Cappuccino-Coffee.jpg" />
+                      </div>
+                  </div>
+              </div> 
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
         <!-- First Start Here  -->
         <div class="hai">
           <div class="grilled">
