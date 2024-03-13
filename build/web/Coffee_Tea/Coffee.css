@@ -120,6 +120,17 @@ div.Add-Cart-Order-Btn-Process{
        grid-template-columns:auto;
     }   
 }
+
+h1.Price_Item{
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+span.Price_cart{
+    padding-left: 3px;
+}
+
 button.Add-cart-grilled{
   margin: 10px;
   padding: 15px 30px;
@@ -149,6 +160,7 @@ button.Add-cart-grilled:hover {
 button.Add-cart-grilled:active {
   transform: scale(0.95);
 }
+
 
 
 .popup-message {

@@ -288,7 +288,7 @@ if (request.getParameter("addToCart") != null) {
                            added flavors. While it has a slightly bitter taste compared to when it is flavored with additives, many people love a 
                            strong cup of black coffee. In fact, for some, it is part of their everyday diet.
                        </p>
-                       
+                       <h1 class="Price_Item"><i class="fa fa-inr" aria-hidden="true"></i><span class="Price_cart">50</span> </h1>
                        <div class="Add-Cart-Order-Btn-Process">
                                  <div class="cart-items">
                                     <!-- Add to Cart Form -->
